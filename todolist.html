@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carol To Do!</title>
+    <link rel="stylesheet" href="todolist.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header class="judul">
+      <p>Tugas Aku!</p>
+    </header>
+    <main>
+      <section>
+        <article>
+          <p>Cari Tugas:</p>
+          <input type="text" id="search_input" placeholder="Cari tugas..." />
+          <button onclick="searchTasks()">Cari</button>
+          <ul id="task_filter"></ul>
+        </article>
+      </section>
+      <section>
+        <article id="tugas_input">
+          <p>Ayo Nugas!</p>
+          <input
+            type="text"
+            id="input_task"
+            placeholder="Tambahkan tugas" /><br />
+          <input type="date" id="input_date" /> <br />
+          <button onclick="addTask()">Tambah</button>
+        </article>
+        <article class="tugas_list">
+          <p>Belum Selesai</p>
+          <ul id="list_belum"></ul>
+          <p>Sudah Selesai</p>
+          <ul id="list_sudah"></ul>
+        </article>
+      </section>
+    </main>
+    <script src="todolist.js"></script>
+  </body>
+</html>
